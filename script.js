@@ -6,9 +6,8 @@ const passwordConfirmInput = document.querySelector("#password-confirm");
 emailInput.addEventListener('blur', () => {
     console.log("blured");
     if (emailInput.validity.typeMismatch) {
-        // emailInput.style.borderColor = "red";
+        emailInput.style.backgroundColor = "red";
         emailInput.setCustomValidity("Not of email type.");
         emailInput.reportValidity();
-     
     }
 });
