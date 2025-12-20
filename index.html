@@ -9,14 +9,28 @@
 <body>
 
     <form novalidate>
-        <label for="email">Email: </label>
-        <input type="email" id="email" required>
-        <label for="post-code" >Postal Code:</label>
-        <input type="text" id="post-code" required pattern="^\d{5}$">
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-        <label for="password-confirm">Password Confirmation:</label>
-        <input type="password" id="password-confirm" required>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" class="input-fields" id="email" required>
+        </div>
+
+        <div>
+                    <label for="post-code">Postal Code:</label>
+                    <input type="text" id="post-code" class="input-fields" required pattern="^\d{5}$">
+
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" class="input-fields" id="password" required>
+        </div>
+
+        <div>
+            <label for="password-confirm">Password Confirmation:</label>
+            <input type="password" class="input-fields" id="password-confirm" required>
+
+        </div>
+
         <select aria-label="Select Country" id="country" required>
             <option value="">--Please select a country--</option>
             <option value="US">United States</option>
@@ -25,8 +39,11 @@
             <option value="AU">Australia</option>
             <option value="DE">Germany</option>
         </select>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
 
     </form>
 
