@@ -10,7 +10,16 @@ form {
 
 input {
     width: 250px;
+    outline: none;
 
+}
+
+input:invalid {
+    background-color: red;
+} 
+
+input:valid {
+    background-color: white;
 }
 
 button {

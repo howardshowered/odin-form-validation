@@ -8,21 +8,20 @@
 </head>
 <body>
 
-    <form novalidate>
+    <form>
         <div>
             <label for="email">Email: </label>
             <input type="email" class="input-fields" id="email" required>
         </div>
 
         <div>
-                    <label for="post-code">Postal Code:</label>
-                    <input type="text" id="post-code" class="input-fields" required pattern="^\d{5}$">
-
+            <label for="post-code">Postal Code:</label>
+            <input type="text" id="post-code" class="input-fields" pattern="^\d{5}(-\d{4})?$" required>
         </div>
 
         <div>
             <label for="password">Password:</label>
-            <input type="password" class="input-fields" id="password" required>
+            <input type="password" class="input-fields" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
         </div>
 
         <div>
@@ -40,7 +39,7 @@
             <option value="DE">Germany</option>
         </select>
         <div>
-            <button type="submit">Submit</button>
+            <button id="submit" type="submit">Submit</button>
             <button type="reset">Reset</button>
         </div>
 
